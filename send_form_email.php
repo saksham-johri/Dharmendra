@@ -1,4 +1,6 @@
 <?php
+function1()
+{
 if(isset($_POST['email'])) {
  
     $email_to = "shresthb62@gmail.com";
@@ -16,7 +18,6 @@ if(isset($_POST['email'])) {
  
     // validation expected data exists
     if(!isset($_POST['name']) ||
-        !isset($_POST['last_name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
@@ -26,7 +27,7 @@ if(isset($_POST['email'])) {
  
     $name = $_POST['name'];
     $email_from = $_POST['email']; 
-    $message = $_POST['messgae'];
+    $message = $_POST['message'];
  
     $error_message = "Enter Your Details Correctly";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -77,5 +78,6 @@ Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
  
+}
 }
 ?>

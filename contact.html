@@ -38,10 +38,15 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+    
+    <?php>
+
+        include 'send_from_email.php';
+
+    ?>
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
@@ -154,7 +159,7 @@
 		
 
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" name="contactform" id="myForm" action=" send_form_email.php" method="post">
+			<form class="contact100-form validate-form" name="contactform" id="myForm" action="send_form_email.php" method="post">
 				<span class="contact100-form-title">
 					Contact Us
 				</span>
